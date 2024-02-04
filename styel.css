@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:linear-gradient(#270029,#210133);
+    height: 100vh;
+    font-family: system-ui;
+
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+header{
+ position: absolute;   
+ width: 95%;
+ z-index: 150;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin: 30px;
+
+}
+header .logo{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header ul li{
+    margin-right: 25px ;
+}
+
+header ul li a {
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+
+header ul li a:hover , .active{
+    background-color: white;
+    color: #270029;
+}
+.main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.main::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to top, #270029 , transparent);
+}
+.main img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+#moon2{
+    mix-blend-mode: screen;
+}
+.content{
+    color: white;
+    padding: 30px;
+    z-index: 150;
+}
+.content h2{
+    margin: 20px;
+    font-size: 30px;
+}
+.content p{
+    margin: 20px;
+}
